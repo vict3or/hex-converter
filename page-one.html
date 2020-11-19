@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <title>Hex to RGB</title>
+</head>
+<body>
+    <div id="container">
+        <div class="main">
+            <div class="topbar">
+                <H1>HEX To RGB</H1>
+                <H2>Smart, fast and easy to use 
+                    online tool built to convert <strong>Hex to Rgb</strong> or <strong>Rgb to Hex</strong>.</H2>
+            </div>
+            <div id="container-two">
+                <div>
+                    <h2>RGB to Hex color Converter</h2>
+                    <p>
+                        How to use:
+                        <br>
+                        Enter a Red, Green and Blue color value to convert to a css hex triplet
+                    </p>
+                    <form>
+                        <label for="red">(R) Red:</label>
+                        <input name="red" id="red" placeholder="255" type="number" autocomplete="off" value/>
+                        <label for="green">(G) Green:</label>
+                        <input name="green" id="green" placeholder="255" type="number" autocomplete="off" value/>
+                        <label for="blue">(B) Blue:</label>
+                        <input name="brlue" id="blue" placeholder="255" type="number" autocomplete="off" value/>
+                        <button id="button" type="submit" onclick="convert()">Convert Color</button>
+                    </form>
+
+                    <form id="result-block">
+                        <h3 class="first">Hex Color Code:</h3>
+                        <input type="text" readonly id="hex">
+                        <h3 class="second">RGB CSS Color:</h3>
+                        <input type="text" readonly id="rgb">
+                        <h3 class="third">Color Preview:</h3>
+                        <input type="text" readonly id="color">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <footer class="footer"></footer>
+    </div>
+
+    <script src="script1.js"></script>
+</body>
+</html>
